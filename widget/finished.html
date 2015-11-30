@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Effects - Effect demo</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="./finished.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <style>
+    .toggler { width: 500px; height: 200px; position: relative; }
+    #button { padding: .5em 1em; text-decoration: none; }
+    #effect { width: 240px; height: 135px; padding: 0.4em; position: relative; }
+    #effect h3 { margin: 0; padding: 0.4em; text-align: center; }
+    .ui-effects-transfer { border: 2px dotted gray; }
+  </style>
+</head>
+<body>
+ 
+<div class="toggler">
+  <div id="effect" class="ui-widget-content ui-corner-all">
+    <h3 id="title" class="ui-widget-header ui-corner-all">Blind</h3>
+    <p id="text">
+      This will demo the blind effect!
+    </p>
+  </div>
+</div>
+ 
+<select name="effects" id="effectTypes" onchange="changeText()">
+  <option value="blind">Blind</option>
+  <option value="bounce">Bounce</option>
+  <option value="clip">Clip</option>
+  <option value="drop">Drop</option>
+  <option value="explode">Explode</option>
+  <option value="fade">Fade</option>
+  <option value="fold">Fold</option>
+  <option value="highlight">Highlight</option>
+  <option value="puff">Puff</option>
+  <option value="pulsate">Pulsate</option>
+  <option value="scale">Scale</option>
+  <option value="shake">Shake</option>
+  <option value="size">Size</option>
+  <option value="slide">Slide</option>
+  <option value="transfer">Transfer</option>
+</select>
+ 
+<button id="effectButton" onclick="runEffect()">Run Effect</button>
+
+<div>
+  <h3>Progress Bars</h3>
+  <div id="progressbar"></div>
+  <button id="progressButton" onclick="progress()">Progress!</button>
+</div>
+
+ 
+</body>
+</html>
