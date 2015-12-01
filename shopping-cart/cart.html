@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping cart example</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="cart.css">
+</head>
+<body>
+	<div role="navigation" class="navbar">
+		<div class="navbar-header">
+			<a class="navbar-brand" ui-sref="home">Shopper's Shoppe</a>
+		</div>
+		<div>
+			<ul class='navbar-right navbar-nav nav'>
+				<li>
+					<img class="cart-icon" src="shopping-cart.png">
+					<svg class="circle" height="25" width="25">
+						<g>
+							<circle cx="12.5" cy="12.5" r="12.5" fill="red" />
+							<text id="item-count" x="50%" y="68%" text-anchor="middle">0</text>
+						</g>
+					</svg>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="container">
+		<div class="col-xs-10 col-sm-5 col-md-3 col-lg-2 tile">
+			<p>Product 1</p>
+			<p>Description for product 1</p>
+		</div>
+		<div class="col-xs-10 col-sm-5 col-md-3 col-lg-2 tile">
+			<p>Product 2</p>
+			<p>Description for product 2</p>
+		</div>
+		<div class="col-xs-10 col-sm-5 col-md-3 col-lg-2 tile">
+			<p>Product 3</p>
+			<p>Description for product 3</p>
+		</div>
+	</div>
+</body>
+</html>
