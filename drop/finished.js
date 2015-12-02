@@ -1,11 +1,11 @@
 $( document ).on('ready', function() {
-  $( ".draggable" ).draggable({
+  $( ".tile" ).draggable({
     revert: true,
     zIndex: 100
   });
-  $( "#droppable" ).droppable({
+  $( ".cart" ).droppable({
     drop: function( event, ui ) {
-      var count = $(this).find('#count');
+      var count = $(this).find('#item-count');
       count.text(parseInt(count.text()) + 1);
     }
   });
