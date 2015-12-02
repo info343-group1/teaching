@@ -1,5 +1,5 @@
 $( document ).on('ready', function() {
-  $( ".draggable" ).draggable({
+  $( ".tile" ).draggable({
     revert: true,
     zIndex: 100
   });
