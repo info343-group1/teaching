@@ -3,11 +3,11 @@
 	box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
 	margin: 20px;
 	padding: 20px;
-	background-color: gray;
+	background-color: #2e3037;
 }
 
 .tile p {
-	color:white;
+	color:#39c0ba;
 }
 
 .cart-icon {
@@ -15,12 +15,13 @@
 	width: 40px;
 	margin: 1em;
 	margin-right: 2em;
+	fill:#6d9eeb;
 }
 
 .circle {
 	position: absolute;
 	top:8%;
-	right:15%;
+	right:7%;
 }
 
 #item-count {
@@ -29,7 +30,7 @@
 }
 
 .navbar {
-	background: gray;
+	background: #2e3037;
 	border-radius: 0px;
 }
 
@@ -38,11 +39,21 @@
 	margin-top: 0.15em;
 
 	font-family:'Oleo Script', Helvetica, sans-serif;
-	color: #2b2b2b;
+	color: #6d9eeb;
 	text-shadow: 3px 3px 0px rgba(0,0,0,0.1);
 	font-size: 50px;
 }
 
+.navbar-brand:hover {
+	color:white;
+}
+
 .navbar-right {
 	margin-right: 0px;
+}
+
+@media (min-width: 768px) {
+	.circle {
+		right:15%;
+	}
 }
