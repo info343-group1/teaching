@@ -36,12 +36,12 @@
 
 .navbar-brand {
 	color:white;
-	margin-top: 0.15em;
+	margin-top: 0.5em;
 
 	font-family:'Oleo Script', Helvetica, sans-serif;
 	color: #6d9eeb;
 	text-shadow: 3px 3px 0px rgba(0,0,0,0.1);
-	font-size: 50px;
+	font-size: 35px;
 }
 
 .navbar-brand:hover {
